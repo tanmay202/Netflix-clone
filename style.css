@@ -1,0 +1,42 @@
+*{
+    margin: 0;padding: 0;
+}
+
+
+.main{
+    background-image: url("./images/bg.jpg");
+    height: 80vh;
+    width: 100%;
+    background-position: center center;
+    position: relative;
+   
+}
+
+.box{
+    height: 80vh;
+    width: 100%;
+    background-color: black;
+    opacity: .45;
+    position: absolute;
+    top: 0;
+}
+
+
+.navbar{
+display: flex;
+margin: auto;
+min-width: 80vw;
+align-items: center;
+background-color: red;
+justify-content: center;
+align-items: center;
+}
+
+
+
+.logo{
+    height: 24px;
+    width: 89px;
+    /* color: red;
+    background-color: red; */
+}
