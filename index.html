@@ -1,36 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix Clone</title>
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <div class="header">
 
-    <div class="main">
         <div class="navbar">
             <div class="logo">
                 <img src="./images/logo.svg" alt="">
             </div>
-
-
             <div class="navleft">
-                <select name="" id="">
+                <select name="" id="" class="lang">
                     <option value="">English</option>
-                    <option value="">Hindi</option>
+                    <option value="">हिन्दी</option>
                 </select>
 
-                <button>Sign In
-                </button>
+                <button class="sign">Sign In</button>
             </div>
         </div>
-        <div class="box">
 
-           
+        <div class="content">
+           <div class="h1">
+            <h1>
+                Unlimited movies, TV shows and more
+            </h1>
+           </div>
 
+            <p class="p1">
+                Starts at ₹149. Cancel anytime.
+            </p>
+            <p class="p2">
+                Ready to watch? Enter your email to create or restart your membership.
+            </p>
+
+            <form class="signup">
+                <input type="email" name="" class="signinput" id="" placeholder="Email address" required>
+                <button class="getstarted">
+                    Get Started
+
+                    <img src="./images/leftarrow.svg" alt="">
+                </button>
+            </form>
         </div>
+
     </div>
     
 </body>

@@ -1,42 +1,192 @@
+
 *{
-    margin: 0;padding: 0;
-}
-
-
-.main{
-    background-image: url("./images/bg.jpg");
-    height: 80vh;
-    width: 100%;
-    background-position: center center;
-    position: relative;
+    margin: 0;padding: 0; 
+    color: white;
    
 }
 
-.box{
-    height: 80vh;
-    width: 100%;
+body{
     background-color: black;
-    opacity: .45;
-    position: absolute;
-    top: 0;
 }
 
+.header {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                url(./images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    
+    position: relative;
+    padding: 10px 8%;
+    background-position: center center;
+}
 
 .navbar{
-display: flex;
-margin: auto;
-min-width: 80vw;
-align-items: center;
-background-color: red;
-justify-content: center;
-align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    
+}
+
+.logo{
+    height: 40px;
+    width: 148px;
+}
+
+@media (max-width: 768px) {
+    .logo {
+        height: 24px;
+        width: 85px;
+    }
+
+    .lang{
+        height: 32px;
+        width: 62px;
+    }
 }
 
 
+.navleft{
+    display: flex;
+    gap: 10px;
+}
 
-.logo{
-    height: 24px;
-    width: 89px;
-    /* color: red;
-    background-color: red; */
+
+.lang {
+    background-color: transparent;
+    color: white;
+    border: px solid white;
+    height: 32px;
+    width: 124px;
+    padding: 0 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none;
+    cursor: pointer;
+    appearance: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black; 
+    background-image: url('./images/dropdown.svg'), url('./images/lang.svg'); /* Dropdown and Language icons */
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 17px center, left 16px center;
+    background-size: 12px, 20px; 
+    padding-left: 43px; 
+    padding-right: 30px; 
+}
+
+.lang option {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+}
+
+.lang option:hover {
+    background-color: #007BFF; 
+    color: white;
+}
+
+.lang:focus{
+    box-shadow: 0px 0 1px 2px white;
+}
+
+
+.sign{
+    background-color:rgb(229,9,20) ;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 32px;
+    width: 76px;
+    min-width: auto;
+    border-radius: 5px;
+    border: none;
+}
+
+.sign:hover{
+    background-color: rgb(153,22,29);
+    cursor: pointer;
+}
+
+/* Content Container */
+.content {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 100%; /* Prevent content overflow */
+}
+
+/* Paragraph Styles */
+.p1 {
+    margin-top: 15px;
+    position: relative;
+}
+
+.p2 {
+    position: relative;
+    margin-top: 20px;
+}
+
+/* Input Field */
+.signinput {
+    background-color: transparent;
+    width: 315px;
+    height: 48px;
+    border: 2px solid red;
+    padding-left: 15px;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Signup Form */
+.signup {
+    position: relative;
+    margin-top: 20px;
+    
+    
+}
+
+.signup img{
+    position: relative;
+    top: 5px;
+
+}
+
+/* Button Styles */
+.getstarted {
+    height: 56px;
+    width: 180px;
+    background-color: red;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    border: none;
+    line-height: 34px;
+}
+
+.getstarted:hover {
+    background-color: rgb(153, 22, 29);
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .signinput {
+        width: 100%;
+    }
+
+    .getstarted {
+        width: 100%;
+    }
 }
